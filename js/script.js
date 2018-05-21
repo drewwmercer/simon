@@ -76,13 +76,13 @@ $(function() {
 
 function lightUp(x) {
   var green = document.createElement("audio");
-  green.src = "simonSound1.mp3";
+  green.src = "https://s3.amazonaws.com/freecodecamp/simonSound1.mp3";
   var blue = document.createElement("audio");
-  blue.src = "simonSound2.mp3";
+  blue.src = "https://s3.amazonaws.com/freecodecamp/simonSound2.mp3";
   var yellow = document.createElement("audio");
-  yellow.src = "simonSound3.mp3";
+  yellow.src = "https://s3.amazonaws.com/freecodecamp/simonSound3.mp3";
   var red = document.createElement("audio");
-  red.src = "simonSound4.mp3";
+  red.src = "https://s3.amazonaws.com/freecodecamp/simonSound4.mp3";
   switch (x) {
     case 0:
       $(".green.button.empty").fadeIn("fast");
