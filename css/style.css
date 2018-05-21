@@ -1,5 +1,255 @@
+@keyframes blink {
+  0% {
+    background-color: darkgray;
+    box-shadow: none;
+  }
+  50% {
+    background-color: #cfd8dc;
+    box-shadow: 0 -8px 25px -5px white;
+  }
+  100% {
+    background-color: darkgray;
+    box-shadow: none;
+  }
+}
+
+.blink {
+  animation: blink;
+  animation-duration: 0.2s;
+  animation-iteration-count: 5;
+}
+
 body {
-  background-image: url('/table-pattern-line-green-magazine-print-605831-pxhere.com.jpg');
-  justify-content: center;
-  align-items: center;
+  background-image: url("../table-pattern-background.jpg");
+  outline: 0 !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color: #705c55;
+}
+
+.base {
+  min-width: 300px;
+  width: 90vw;
+  max-width: 600px;
+  min-height: 305px;
+  height: 91vw;
+  max-height: 610px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px 5px white;
+}
+
+.clip-layer {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 50vh;
+  top: 50%;
+  min-width: 300px;
+  width: 90vw;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.small {
+  min-width: 150px;
+  width: 45vw;
+  max-width: 300px;
+  min-height: 150px;
+  height: 45vw;
+  max-height: 300px;
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  border-radius: 25vw 25vw 0 0;
+  transform: translate(-50%, -102%);
+  min-width: 158px;
+  width: 48vw;
+  max-width: 315px;
+  min-height: 78px;
+  height: 24vw;
+  max-height: 155px;
+  box-shadow: none;
+}
+
+.button {
+  border-bottom: 7px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 3px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: absolute;
+  margin: 0;
+  width: 45%;
+  height: 45%;
+  cursor: pointer;
+}
+
+.empty {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.button.empty {
+  background-image: radial-gradient(
+    ellipse at center,
+    #fcf5b3 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.9;
+  mix-blend-mode: lighten;
+}
+
+.blue {
+  border-bottom-right-radius: 100%;
+  background-color: royalblue;
+  top: 51%;
+  left: 51%;
+}
+
+.red {
+  border-top-right-radius: 100%;
+  background-color: red;
+  top: 49%;
+  transform: translateY(-100%);
+  left: 51%;
+}
+
+.green {
+  border-top-left-radius: 100%;
+  background-color: green;
+  top: 49%;
+  left: 49%;
+  transform: translate(-100%, -100%);
+}
+
+.yellow {
+  border-bottom-left-radius: 100%;
+  background-color: yellow;
+  top: 51%;
+  left: 49%;
+  transform: translateX(-100%);
+}
+
+h1 {
+  color: white;
+  /* position: fixed; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -65%); */
+  font-family: Lalezar;
+  font-size: 6.5rem;
+}
+
+h4 {
+  color: white;
+}
+
+.switch {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 7%;
+  width: 23%;
+  background-color: #221a18;
+  border: none;
+  border-top: 5px solid rgb(56, 50, 45);
+  transition: background-color 0.4s;
+  border-radius: 15%
+}
+
+.square {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-160%);
+  height: 7%;
+  width: 7%;
+  background-color: darkgray;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+  border-radius:50%;
+}
+
+.power {
+  position: absolute;
+  top: 65%;
+  left: 78%;
+  width: 14%;
+  height: 14%;
+  border-bottom-width: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.power:active {
+  background-color: rgb(128, 128, 128);
+  border-bottom-width: 0px;
+  height: 9%;
+  top: 67%;
+}
+
+h2 {
+  font-family: changa;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #d7ccc8;
+  font-size: 0.9vw;
+  text-transform: uppercase;
+}
+
+h2:nth-of-type(2) {
+  top: 58%;
+  left: 63%;
+}
+
+h2:nth-of-type(3) {
+  top: 80%;
+  left: 63%;
+}
+
+h2:nth-of-type(4) {
+  top: 67%;
+  left: 35%;
+}
+
+button,
+button:active,
+button:focus {
+  outline: 0;
+}
+
+.modal-header {
+  padding-bottom: 0;
+}
+
+.modal-sm {
+  top: 30%;
+  width: 100vw;
+  max-width: 400px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 15vw;
+  }
+  h2 {
+    font-size: 0.6rem;
+  }
+}
+
+#welcome {
+  margin-bottom: 5%;
 }
