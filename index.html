@@ -5,29 +5,86 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Linking to Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Changa|Lalezar" rel="stylesheet">
 
     <!-- Linking to Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/ce78b4a73c.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
     <title>Simon || Drew Mercer</title>
 </head>
 
 <body>
-    <div class="container text-center">
+    <div class="container text-center" id="welcome">
         <h1>Simon</h1>
         <h4>See it live on my
             <a href="http://www.drewwmercer.xyz/simon/" target="_blank">GitHub Pages</a> site</h4>
 
         <div class="container">
 
+            <div class="clip-layer">
+                <div class="circle">
+                </div>
+            </div>
+            <div class="circle base">
+                <div class="green button">
+                </div>
+                <div class="red button">
+                </div>
+                <div class="yellow button">
+                </div>
+                <div class="blue button">
+                </div>
+                <div class="green button empty">
+                </div>
+                <div class="red button empty">
+                </div>
+                <div class="yellow button empty">
+                </div>
+                <div class="blue button empty">
+                </div>
+            </div>
+            <div class="circle small shadow">
+            </div>
+            <div class="circle small">
+            </div>
+            <h1>simon</h1>
 
+            <div class="circle small empty">
+                <button type="button" class="switch">
+                </button>
+                <div class="square"></div>
+                <h2>strict mode</h2>
+                <div class="square power"></div>
+                <h2>Start</h2>
+                <h2>Reset</h2>
+                <h2>Score: 0</h2>
+            </div>
 
-
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Very impressive! You managed to keep up with Simon for 20 turns! The game will now automatically
+                                restart.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
+
     <!-- Linking to jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
